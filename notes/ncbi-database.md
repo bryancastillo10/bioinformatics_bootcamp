@@ -50,6 +50,27 @@ Sequence data can be downloaded from NCBI for later analysis.
 - FASTA
 - GenBank
 
-## Example
 
-Search for **bzip1** gene of _Arabidopsis thaliana_ so the suggested keyword for searching it is **bzip1 arabidopsis**
+### Practical
+1. Explore NCBI Database:
+- Go to the NCBI website (https://www.ncbi.nlm.nih.gov) and navigate to the "All Databases" tab
+- Explore the different databases available such as PubMed, GenBank, and BLAST
+- Click on each database to learn more about its content and purpose
+
+2. Retrieve an accession number from GenBank:
+- Go to the GenBank database on the NCBI website
+- Use the search bar to find a specific gene or organism you are interested in
+- Click on a result to view details of the sequence
+- Copt the accession number of the sequence
+
+3. Use BLAST to find similar sequences:
+- Go to the BLAST (Basic Local Alignment Search Tool) page on the NCBI website
+- Choose the type of BLAST you want to perform (eg. BLASTn for nucleotide sequences)
+- Enter the sequence you retrieved from GenBank or a sequence of your own
+- Run the BLAST search and explore the results to find similar sequences
+
+4. Download a Sequence from GenBank
+- Go back to the GenBank database and enter the accession number of the sequence found earlier
+- Locate the "Send to" option and chose the "File" to download the sequence in a  format of choice (eg. FASTA)
+
+Practical Search: bzip2 which has accession number of **AT2G18160**
