@@ -2,7 +2,9 @@ def parse_fasta(data: str) -> list[str]:
     seq = []
     curr_seq = ""
 
-    for line in data.strip().splitlines():
+    lines = data.strip().splitlines()
+
+    for line in lines:
         line = line.strip()
 
         if line.startswith(">"):
@@ -11,6 +13,7 @@ def parse_fasta(data: str) -> list[str]:
                 curr_seq = ""
         else:
             curr_seq += line
+
     if curr_seq:
         seq.append(curr_seq)
 
@@ -65,9 +68,9 @@ def main():
 
     print(cons)
 
-    for nuc in ["A", "G", "C", "T"]:
+    for nuc in ["A", "C", "G", "T"]:
         counts = " ".join(map(str, profile[nuc]))
-        print(f"{nuc}:{counts}")
+        print(f"{nuc}: {counts}")
 
 
 if __name__ == "__main__":
